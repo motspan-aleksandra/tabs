@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+#parent {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.tab {
+    display: flex;
+}
+
+.menu a {
+    margin-right: 5px;
+    display: inline-block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    border: 1px solid gray;
+}
+
+.menu a:hover {
+    background: #f8f8f8;
+}
+
+.menu a.active {
+    border-color: transparent;
+    background: #f2f2f2;
+}
+
+.tabs .tab:not(.active) {
+    display: none;
+}
+
+.tabs .tab {
+    padding: 10px;
+    background: #f2f2f2;
+    height: 300px;
+    display: flex;
+    /*align-items: center;*/
+    justify-content:left;
+
+}
+
+.tabs .tab .active::after {
+    content: url("img/play.png");
+    height: 20px;
+
+}
+
+.play {
+    height: 50px;
+    margin-top: 30px;
+    position: absolute;
+    top: 130px;
+    left: 360px;
+}
